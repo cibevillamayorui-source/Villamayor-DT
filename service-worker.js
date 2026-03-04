@@ -5,8 +5,6 @@ const urlsToCache = [
   '/style.css',
   '/manifest.json'
 ];
-
-// Install Service Worker
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -16,7 +14,6 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch from Cache
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
@@ -26,7 +23,6 @@ self.addEventListener('fetch', event => {
   );
 });
 
-// Activate Service Worker
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {

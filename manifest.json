@@ -1,20 +1,22 @@
 {
   "name": "Yahn's Petspace",
   "short_name": "Petspace",
-  "start_url": "index.html",
+  "description": "Find your perfect pet companion",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#95d5b2",
+  "background_color": "#d8cfc2",
+  "theme_color": "#d8cfc2",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "icon-152.png",
-      "sizes": "152x152",
-      "type": "png"
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "png"
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }

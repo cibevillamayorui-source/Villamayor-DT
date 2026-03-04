@@ -1,0 +1,28 @@
+{
+  "pets": [
+    {
+      "name": "Coli",
+      "age": "1 Year",
+      "gender": "Female",
+      "image": "images/coli.jpeg"
+    },
+    {
+      "name": "Drany",
+      "age": "3 Years",
+      "gender": "Male",
+      "image": "images/drany.jpeg"
+    },
+    {
+      "name": "Snow",
+      "age": "2 Years",
+      "gender": "Female",
+      "image": "images/snow.jpeg"
+    },
+    {
+      "name": "Zein",
+      "age": "4 Years",
+      "gender": "Male",
+      "image": "images/zein.jpeg"
+    }
+  ]
+}

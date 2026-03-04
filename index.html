@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahn's Petspace</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#d8cfc2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Petspace">
+    
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon-192.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                🐾 YAHN'S PETSPACE
+            </div>
+            <div class="menu">☰</div>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" placeholder="Search for pets">
+            <span>➜</span>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="featured">
+            <img src="images/featured.jpeg" alt="Featured Pet">
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <div class="cat-header">
+                <span>Categories</span>
+                <span>Show All</span>
+            </div>
+
+            <div class="cat-buttons">
+                <button>All</button>
+                <button>Cat</button>
+                <button>Dog</button>
+            </div>
+        </div>
+
+        <!-- Pet Cards -->
+        <div class="pets">
+            <div class="pet-card">
+                <img src="images/coli.jpeg" alt="Coli">
+                <h3>Coli | 1 Years</h3>
+                <p>Female</p>
+            </div>
+
+            <div class="pet-card">
+                <img src="images/drany.jpeg" alt="Drany">
+                <h3>Drany | 3 Years</h3>
+                <p>Male</p>
+            </div>
+
+            <div class="pet-card">
+                <img src="images/snow.jpeg" alt="Snow">
+                <h3>Snow | 2 Years</h3>
+                <p>Female</p>
+            </div>
+
+            <div class="pet-card">
+                <img src="images/zein.jpeg" alt="Zein">
+                <h3>Zein | 4 Years</h3>
+                <p>Male</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
